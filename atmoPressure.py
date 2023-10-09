@@ -11,9 +11,15 @@ while (True):
 
         if temp <= 0:
             print("The state is solid.")
+            break
 
         elif temp < 100:
             print("The state is liquid.")
+            break
 
         elif temp >= 100:
             print("The state is gas.")
+            break
+
+    else:
+        print("Please answer yes or no.")
