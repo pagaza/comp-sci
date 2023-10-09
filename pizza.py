@@ -14,7 +14,7 @@ while (True):
             break
 
         elif vegChoice not in veg: 
-            print("That ingredient is not available.")
+            print("That ingredient is not available. (Type the first character in uppercase)")
             break
 
     elif prompt1 == "no":
