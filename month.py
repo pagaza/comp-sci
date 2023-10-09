@@ -2,4 +2,4 @@ month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August
 
 num = int(input("Enter the number of the month (1 to 12): \n"))
 
-print(month[num - 1])
+print("The month for that number is:", month[num - 1])
