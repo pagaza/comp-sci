@@ -20,6 +20,8 @@ while (True):
         elif temp >= 100:
             print("The state is gas.")
             break
-
+        
+        break
+    
     else:
         print("Please answer yes or no.")
