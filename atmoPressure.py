@@ -1,6 +1,6 @@
 while (True):   
 
-    press = str(input("Is the atmospheric pressure normal?")).lower()
+    press = str(input("Is the atmospheric pressure normal?\n")).lower()
 
     if press == "no":
         print("The test can't be performed.")
