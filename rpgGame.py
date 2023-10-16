@@ -1,7 +1,7 @@
-import random
-import sys
+import random #Necessary for RNG rolls
+import sys #Necessary to end game once an ending is reached. 
 
-while (True):
+while (True): #Using while loop as a failsafe if input is wrong
   start = str(input("Start the game? \n"))
 
   if start.lower() == "yes":
@@ -31,7 +31,10 @@ if tavernChoice.lower() == "bar":
   print("You carefully approach a strange-looking fairy at the bar. As you enter their field of vision their eyes widen, and so do yours.\n You recognize them from the giant family portrait in the last house you robbed. They quickly report you to the \nauthorities and you get sent to the gallows.")
   print("BAD ENDING: HANGING")
   print("Health: 0")
-  sys.exit()
+  sys.exit() #[sys.exit()] is used to exit the program when an ending is reached
+
+# All the route choices and endings are nested in an if/elif statement
+# The lower function [.lower()] is used so that the user can type in caps or lowercase
 
 elif tavernChoice.lower() == "table":
   print("You strut to the odd fella at the corner table, who, after you explain your need for a job,\n agrees to pay you if you return to him a precious necklace that is lost in some ruined temple.\n You accept and he leaves, but you realize you have no idea where this temple is.\n You could buy a map to the temple or ask some random passerby for directions.")
@@ -43,8 +46,8 @@ elif tavernChoice.lower() == "table":
 
     if enter.lower() == "find another way":
       print("You choose to walk around and search for an alternative way in. However, while you are trying to get to a window to get\n inside you fall backward into some rocks.")
-      fall = random.randint(1, 20)
-
+      fall = random.randint(1, 20) # [.randint()]is used to make a roll based on 'luck', affecting the ending you get
+ 
       if fall < 10:
         print("Unfortunately for you, your constitution could do some work and you pass out on the ground.\n BAD ENDING: FALL")
         sys.exit()
