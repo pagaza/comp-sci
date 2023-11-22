@@ -1,3 +1,5 @@
+import time
+
 # Variables
 
 mx = 0
@@ -241,6 +243,12 @@ while True:
         continue
 
 res = [mx, ch, jp, fr, sp, it]
+
+print("Results in...")
+
+for i in range (3, 0, -1):
+   print(i, "second(s)...")
+   time.sleep(1)
 
 if max(res) == mx:
    print("You should try Mexican food!")
